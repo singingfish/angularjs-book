@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head lang="en">
+  <meta charset="utf-8">
+  <title>AngularJS Datepicker</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+
+  <script src="js/jquery.maphilight.js" ></script>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <script src="js/maphilight.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+<div class="question">
+  <p>One of these things is not like the other one</p>  <div class="quizimgmap form-group">
+  <img src="img/duckie.jpg"
+    alt="qid.5.4_imagemap" usemap="#qid.5.4_imagemap"/>
+  <map name="qid.5.4_imagemap" id="qid.5.4_imagemap">
+          <area shape="poly" coords="134,79,128,94,152,117,180,110,190,84,185,60,151,71" label="Left Eye"
+           class="allownav" id="Left Eye" href="#" />
+          <area shape="rect" coords="130,170,290,255" label="Tummy"
+           class="allownav" id="Tummy" href="#" />
+          <area shape="circle" coords="222,77,23" label="Right Eye"
+           class="allownav" id="Right Eye" href="#" />
+          <area shape="rect" coords="55,155,112,229" label="Left Wing"
+           class="allownav" id="Left Wing" href="#" />
+      </map>
+  <p>
+    <fieldset>
+      <div class="select label">
+        <li><label for="qid.5.4">Click on the correct answer</label></li>
+      </div>
+      <input id="qid.5.4" class="quiz_imgmap" name="qid.5.4" type="text" value="" readonly parsley-required="true" parsley-error-message="You must click an item in the diagram"/>
+    </fieldset>
+  </div><!-- form-group -->
+
+   <p></p></div>
+</body>
+</html>
